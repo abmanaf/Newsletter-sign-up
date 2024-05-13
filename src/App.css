@@ -4,8 +4,8 @@
   height: auto;
   margin: 0 auto;
   margin-top: 2em;
-  border-radius: 1em;
-  padding: 1em;
+  border-radius: 2em;
+  padding: 2em 1.5em;
 }
 .sub-container {
   display: flex;
@@ -33,8 +33,20 @@ button {
   width: 100%;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: var(--clr-Dark-Slate-Grey);
+  color: var(--clr-background);
+  font-weight: var(--fw-bold);
+  outline: none;
 }
-
+button:hover,
+.btn2:hover {
+  background: linear-gradient(
+    127deg,
+    rgba(255, 63, 124, 1) 40%,
+    rgb(229, 40, 15) 70%
+  );
+}
 .forms {
   margin-top: 2em;
 }
