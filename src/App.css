@@ -1,0 +1,40 @@
+.main-container {
+  background-color: white;
+  width: 55%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 2em;
+  border-radius: 1em;
+  padding: 1em;
+}
+.sub-container {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.first-container {
+  width: 50%;
+}
+.second-container {
+  width: 50%;
+}
+input {
+  width: 100%;
+  padding: 1.3em;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}
+
+button {
+  padding: 1.3em;
+  border-radius: 5px;
+  margin-top: 1em;
+  width: 100%;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.forms {
+  margin-top: 2em;
+}
