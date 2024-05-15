@@ -1,25 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #36384e;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+:root {
+  --clr-primary-tomato: hsl(4, 100%, 67%);
+  --clr-Grey: hsl(231, 7%, 60%);
+  --clr-Charcoal-Grey: hsl(235, 18%, 26%);
+  --clr-Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --clr-background: hsl(0, 0%, 100%);
+  --font: 1rem;
+  --fw-rgl: 400;
+  --fw-bold: 700;
+  --ff: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--clr-Charcoal-Grey);
+  font-weight: var(--fw-rgl);
+  font-size: var(--font);
+  font-family: var(--ff);
+}
+
+img {
+  margin-right: 1em;
+}
+
 .main-container {
   background-color: white;
-  width: 55%;
+  max-width: 920px;
   height: auto;
   margin: 0 auto;
   margin-top: 2em;
   border-radius: 2em;
-  padding: 2em 1.5em;
+  padding: 1em 1em;
 }
+
 .sub-container {
   display: flex;
   align-items: center;
   gap: 2em;
 }
+
 .first-container {
-  width: 50%;
+  width: 100%;
+  margin: 1em;
 }
+
 .second-container {
-  width: 50%;
-  height: auto;
-  background-image: url("/src/assets/images/illustration-sign-up-desktop.svg");
+  width: 100%;
+  background-image: url(src/assets/images/illustration-sign-up-desktop.svg);
+  border-radius: 1em;
+  height: 85vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.second-container img {
+  height: 100vh;
+}
+
 input {
   width: 100%;
   padding: 1.3em;
@@ -41,6 +91,7 @@ button {
   font-weight: var(--fw-bold);
   outline: none;
 }
+
 button:hover,
 .btn2:hover {
   background: linear-gradient(
@@ -49,17 +100,37 @@ button:hover,
     rgb(229, 40, 15) 70%
   );
 }
+
 .forms {
   margin-top: 2em;
 }
+
 @media only screen and (max-width: 500px) {
   .main-container {
     background-color: white;
     width: 100%;
     height: auto;
-    margin: 0 auto;
-    margin-top: 2em;
-    border-radius: 2em;
-    padding: 2em 1.5em;
+    margin-top: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+  .sub-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2em;
+  }
+  .first-container {
+    width: 100%;
+  }
+  .second-container {
+    width: 100%;
+    background-image: url(src/assets/images/illustration-sign-up-mobile.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .second-container {
+    height: 50vh;
+    margin-top: -1.3em;
   }
 }
