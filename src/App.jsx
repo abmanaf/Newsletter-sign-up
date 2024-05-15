@@ -1,5 +1,5 @@
-import React from 'react'
-import "./App.css"
+import React from 'react';
+import './App.css';
 
 function App() {
   return (
@@ -9,10 +9,9 @@ function App() {
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           
-          
-            <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />Product discovery and building what matters</p>
-            <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />Measuring to ensure updates are a success</p>
-            <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />And much more!</p>
+          <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />Product discovery and building what matters</p>
+          <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />Measuring to ensure updates are a success</p>
+          <p style={{display: 'flex', alignItems: 'center'}}><img src="src/assets/images/icon-list.svg" alt="" />And much more!</p>
           
           <div className='forms'>
             <label htmlFor="email">Email Address</label> <br /> <br />
@@ -21,11 +20,10 @@ function App() {
           </div>
         </div>
         <div className='second-container'>
-          <img src="/src/assets/images/illustration-sign-up-desktop.svg" alt="background" />  
         </div>
       </div>
     </div>
   );
 }
 
-export default App
+export default App;
