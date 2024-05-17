@@ -30,7 +30,7 @@ body {
   font-family: var(--ff);
 }
 
-img {
+.first-container img {
   margin-right: 1em;
 }
 
@@ -52,20 +52,13 @@ img {
 
 .first-container {
   width: 100%;
-  margin: 1em 1em; /* Added margin on the sides */
 }
 
 .second-container {
   width: 100%;
-  background-image: url(src/assets/images/illustration-sign-up-desktop.svg);
-  border-radius: 1em;
-  height: 85vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 input {
@@ -74,6 +67,10 @@ input {
   border-radius: 6px;
   border: 1px solid #ccc;
   box-shadow: none;
+}
+
+input.error {
+  border: 1px solid red;
 }
 
 button {
@@ -102,15 +99,34 @@ button:hover,
 .forms {
   margin-top: 2em;
 }
+
+.label-forms {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  margin-bottom: 1em;
+  font-weight: 600;
+}
+
+.label-forms span {
+  visibility: hidden;
+  color: red;
+}
+
+.label-forms.error span {
+  visibility: visible;
+}
+
 .image img {
   object-fit: contain;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 769px) {
   body {
-    background-color: white;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
+    width: 100%;
   }
 
   h1 {
@@ -134,15 +150,12 @@ button:hover,
     width: 90%;
   }
   .second-container {
-    background-image: url(src/assets/images/illustration-sign-up-mobile.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 50vh;
-    border-radius: 0 0 1em 1em;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    object-fit: contain;
+  }
+  .second-container img {
+    width: 100%;
   }
 }
