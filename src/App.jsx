@@ -1,20 +1,23 @@
 import React, { useState } from 'react';
 import './App.css';
+import Modal from './Modal';
 
 function App() {
   const [email, setEmail] = useState("");
   const [error, setError] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (emailPattern.test(email) && email.endsWith('.com')) {
       setError(false);
-      alert(`Hello ${email}, Thanks for subscribing`);
+      setShowModal(true);
     } else {
       setError(true);
       console.log("Valid Email required");
     }
+
   };
 
   return (
@@ -59,6 +62,7 @@ function App() {
           </picture>
         </div>
       </div>
+      <Modal show={showModal} onClose={() => setShowModal(false)} email={email} />
     </div>
   );
 }
