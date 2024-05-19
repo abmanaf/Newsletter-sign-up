@@ -31,8 +31,3 @@ body {
   font-size: var(--font);
   font-family: var(--ff);
 }
-
-@media only screen and (max-width: 500px) {
-  body {
-  }
-}
