@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #36384e;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
 }
@@ -10,9 +9,6 @@ body {
 p,
 h1 {
   overflow-wrap: break-word;
-}
-h1 {
-  font-size: 3em;
 }
 
 :root {
@@ -35,6 +31,8 @@ body {
   font-size: var(--font);
   font-family: var(--ff);
 }
-img {
-  margin-right: 1em;
+
+@media only screen and (max-width: 500px) {
+  body {
+  }
 }
