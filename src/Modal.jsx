@@ -1,4 +1,3 @@
-// Modal.js
 import React from 'react';
 import './Modal.css';
 
@@ -6,7 +5,7 @@ function Modal({ show, onClose, email }) {
   if (!show) {
     return null;
   }
-
+ 
   return (
     <div className="modal-overlay">
       <div className="modal-content">
