@@ -23,6 +23,12 @@ h1 {
   --ff: "Roboto", sans-serif;
 }
 
+@font-face {
+  font-family: "Roboto";
+  src: url(./assets/fonts/Roboto-Regular.ttf) format(truetype);
+  font-weight: var(--fw-rgl);
+  font-style: normal;
+}
 body {
   background-color: var(--clr-Charcoal-Grey);
   font-weight: var(--fw-rgl);
@@ -30,13 +36,18 @@ body {
   font-family: var(--ff);
 }
 
-.first-container img {
+.first-container {
   margin-right: 1em;
+}
+
+.first-container img {
+  margin-right: 10px;
 }
 
 .main-container {
   background-color: white;
   max-width: 920px;
+  width: 100%;
   height: auto;
   margin: 0 auto;
   margin-top: 2em;
@@ -60,7 +71,15 @@ body {
   justify-content: center;
   align-items: center;
 }
-
+ul li {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+ul li:last-child {
+  align-items: start;
+}
 input {
   width: 100%;
   padding: 1.3em;
@@ -155,6 +174,9 @@ button:hover,
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .second-container .img img {
+    width: 100%;
   }
   .second-container img {
     width: 100%;
