@@ -15,9 +15,7 @@ function App() {
       setShowModal(true);
     } else {
       setError(true);
-      console.log("Valid Email required");
     }
-
   };
 
   return (
@@ -26,18 +24,22 @@ function App() {
         <div className='first-container'>
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
-          <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="../assets/images/icon-list.svg" alt="icon-list" />Product discovery and building what matters
-          </p>
-          <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="../assets/images/icon-list.svg" alt="icon-list" />Measuring to ensure updates are a success
-          </p>
-          <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="../assets/images/icon-list.svg" alt="icon-list" />And much more!
-          </p>
-
+          <ul>
+            <li>
+              <img src="../assets/images/icon-list.svg" alt="icon-list" />
+              <span>Product discovery and building what matters</span>
+            </li>
+            <li>
+              <img src="../assets/images/icon-list.svg" alt="icon-list" />
+              <span>Measuring to ensure updates are a success</span>
+            </li>
+            <li>
+              <img src="../assets/images/icon-list.svg" alt="icon-list" />
+              <span>And much more!</span>
+            </li>
+          </ul>
           <div className='forms'>
-            <form action="" onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
               <div className={`label-forms ${error ? 'error' : ''}`}>
                 <label htmlFor="email">Email Address</label>
                 <span className={`${error ? 'visible' : ''}`}>Valid email required</span>
@@ -56,10 +58,12 @@ function App() {
           </div>
         </div>
         <div className='second-container'>
-          <picture className="img" id="right">
-            <source className="img-desk" media="(min-width: 769px)" srcSet="../assets/images/illustration-sign-up-desktop.svg" />
+          <div className='desktop-image'>
+            <img src="../assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop" />
+          </div>
+          <div className='mobile-image'>
             <img src="../assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" />
-          </picture>
+          </div>
         </div>
       </div>
       <Modal show={showModal} onClose={() => setShowModal(false)} email={email} />
