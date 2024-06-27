@@ -58,6 +58,11 @@
     border-radius: 0;
   }
 
+  .img-thanks img {
+    margin-top: 3em;
+    width: 45px;
+    height: 45px;
+  }
   .modal-button {
     margin-top: 18em;
   }
