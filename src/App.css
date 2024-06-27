@@ -1,14 +1,7 @@
 * {
   box-sizing: border-box;
-}
-
-body {
-  background-color: #36384e;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased;
-}
-h1 {
-  font-size: 3em;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -29,6 +22,7 @@ h1 {
   font-weight: var(--fw-rgl);
   font-style: normal;
 }
+
 body {
   background-color: var(--clr-Charcoal-Grey);
   font-weight: var(--fw-rgl);
@@ -36,23 +30,18 @@ body {
   font-family: var(--ff);
 }
 
-.first-container {
-  margin-right: 1em;
-}
-
-.first-container img {
-  margin-right: 10px;
-}
-
 .main-container {
   background-color: white;
   max-width: 920px;
   width: 100%;
-  height: auto;
   margin: 0 auto;
   margin-top: 2em;
   border-radius: 2em;
   padding: 1em 1em;
+}
+
+h1 {
+  font-size: 3em;
 }
 
 .sub-container {
@@ -71,15 +60,24 @@ body {
   justify-content: center;
   align-items: center;
 }
-ul li {
+
+.second-container .mobile-image {
+  display: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 2em;
+}
+
+li {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-ul li:last-child {
-  align-items: start;
-}
+
 input {
   width: 100%;
   padding: 1.3em;
@@ -142,7 +140,7 @@ button:hover,
   object-fit: contain;
 }
 
-@media only screen and (max-width: 769px) {
+@media only screen and (max-width: 400px) {
   body {
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -174,6 +172,63 @@ button:hover,
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .second-container .desktop-image {
+    display: none;
+  }
+
+  .second-container .mobile-image {
+    display: block;
+  }
+  .second-container .img img {
+    width: 100%;
+  }
+  .second-container img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2em;
+    font-weight: bolder;
+  }
+  .main-container {
+    width: 22rem;
+    height: 47.5rem;
+    margin-top: 0;
+    padding: 0;
+    border-radius: 0;
+    margin: 0 auto;
+  }
+  .sub-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 2em;
+  }
+  .first-container {
+    width: 90%;
+  }
+  .second-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .second-container .desktop-image {
+    display: none;
+  }
+
+  .second-container .mobile-image {
+    display: block;
   }
   .second-container .img img {
     width: 100%;
