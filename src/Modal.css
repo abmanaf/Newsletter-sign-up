@@ -36,10 +36,8 @@
   .modal-content {
     width: 28rem;
     height: 41rem;
-    background: white;
     padding: 1.8em;
     border-radius: 0;
-    text-align: center;
   }
 
   .img-thanks img {
@@ -56,17 +54,10 @@
   .modal-content {
     width: 22rem;
     height: 41rem;
-    background: white;
     padding: 1.1em;
     border-radius: 0;
-    text-align: center;
   }
 
-  .img-thanks img {
-    margin-top: 3em;
-    width: 45px;
-    height: 45px;
-  }
   .modal-button {
     margin-top: 18em;
   }
