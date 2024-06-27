@@ -31,3 +31,23 @@
     rgb(229, 40, 15) 70%
   );
 }
+
+@media only screen and (max-width: 400px) {
+  .modal-content {
+    width: 28rem;
+    height: 41rem;
+    background: white;
+    padding: 0.5em;
+    border-radius: 0;
+    text-align: center;
+  }
+
+  .img-thanks img {
+    margin-top: 3em;
+    width: 45px;
+    height: 45px;
+  }
+  .modal-button {
+    margin-top: 20em;
+  }
+}
