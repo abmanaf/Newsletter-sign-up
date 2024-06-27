@@ -27,13 +27,13 @@ function App() {
           <h1>Stay updated!</h1>
           <p>Join 60,000+ product managers receiving monthly updates on:</p>
           <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="src/assets/images/icon-list.svg" alt="" />Product discovery and building what matters
+            <img src="../assets/images/icon-list.svg" alt="icon-list" />Product discovery and building what matters
           </p>
           <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="src/assets/images/icon-list.svg" alt="" />Measuring to ensure updates are a success
+            <img src="../assets/images/icon-list.svg" alt="icon-list" />Measuring to ensure updates are a success
           </p>
           <p style={{ display: 'flex', alignItems: 'center' }}>
-            <img src="src/assets/images/icon-list.svg" alt="" />And much more!
+            <img src="../assets/images/icon-list.svg" alt="icon-list" />And much more!
           </p>
 
           <div className='forms'>
@@ -57,8 +57,8 @@ function App() {
         </div>
         <div className='second-container'>
           <picture className="img" id="right">
-            <source className="img-desk" media="(min-width: 769px)" srcSet="src/assets/images/illustration-sign-up-desktop.svg" />
-            <img src="src/assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" />
+            <source className="img-desk" media="(min-width: 769px)" srcSet="../assets/images/illustration-sign-up-desktop.svg" />
+            <img src="../assets/images/illustration-sign-up-mobile.svg" alt="illustration-sign-up-mobile" />
           </picture>
         </div>
       </div>
