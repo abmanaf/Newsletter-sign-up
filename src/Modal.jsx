@@ -28,7 +28,8 @@ function Modal({ show, onClose, email }) {
             <p style={{fontSize: '14px'}}>A confirmation email has been sent to  <strong>{email}</strong>  Please open it  and click the button inside to confirm your subscription.</p>
         </div>
         <button onClick={onClose} className="modal-button">Dismiss Message</button>
-      </div>*/}
+      </div>
+      */}
     </div>
    
   );
