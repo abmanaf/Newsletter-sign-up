@@ -18,7 +18,8 @@ function Modal({ show, onClose, email }) {
         </div>
         <button onClick={onClose} className="modal-button">Dismiss Message</button>
       </div>
-       {/*  <div className="modal-content">
+       {/*  
+       <div className="modal-content">
         <div className='img-thanks' style={{ display: 'flex', alignItems: 'center' }}>
             <img src="../assets/images/icon-list.svg" alt="icon-list" />
         </div>
